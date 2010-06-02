@@ -148,10 +148,10 @@
 		724599D01011269C008991DA /* JournlerCore Demonstration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JournlerCore Demonstration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		724599D61011269D008991DA /* JournlerCore Demonstration-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JournlerCore Demonstration-Info.plist"; sourceTree = "<group>"; };
 		724599E810112823008991DA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		724599F9101128B2008991DA /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		724599F9101128B2008991DA /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenu.xib; path = Resources/MainMenu.xib; sourceTree = "<group>"; };
 		72459AD110112926008991DA /* DemonstrationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemonstrationController.h; sourceTree = "<group>"; };
 		72459AD210112926008991DA /* DemonstrationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemonstrationController.m; sourceTree = "<group>"; };
-		72459AD610112971008991DA /* ReadMe.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
+		72459AD610112971008991DA /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* JournlerCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JournlerCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -199,7 +199,7 @@
 		0867D691FE84028FC02AAC07 /* JournlerCore */ = {
 			isa = PBXGroup;
 			children = (
-				72459AD610112971008991DA /* ReadMe.rtf */,
+				72459AD610112971008991DA /* README.markdown */,
 				724599E7101127FB008991DA /* Demonstration */,
 				08FB77AEFE84172EC02AAC07 /* JournlerCore Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
@@ -521,6 +521,7 @@
 				089C1667FE841158C02AAC07 /* English */,
 			);
 			name = InfoPlist.strings;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
