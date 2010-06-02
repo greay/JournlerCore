@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7245970D101113C3008991DA /* JournlerSingletons.h in Headers */ = {isa = PBXBuildFile; fileRef = 7245970A101113C3008991DA /* JournlerSingletons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7245970E101113C3008991DA /* JournlerCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 7245970B101113C3008991DA /* JournlerCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7245970F101113C3008991DA /* Definitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7245970C101113C3008991DA /* Definitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7245972110111443008991DA /* JournlerJournal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7245971F10111443008991DA /* JournlerJournal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7245972210111443008991DA /* JournlerJournal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7245972010111443008991DA /* JournlerJournal.m */; };
+		7245972610111457008991DA /* SproutedInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7245972410111457008991DA /* SproutedInterface.framework */; };
+		7245972710111457008991DA /* SproutedUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7245972510111457008991DA /* SproutedUtilities.framework */; };
+		724597BB1011149E008991DA /* JournlerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 724597B91011149E008991DA /* JournlerObject.m */; };
+		724597BC1011149E008991DA /* JournlerObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 724597BA1011149E008991DA /* JournlerObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		724597BF101114B8008991DA /* JournlerCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 724597BD101114B8008991DA /* JournlerCollection.m */; };
+		724597C0101114B8008991DA /* JournlerCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 724597BE101114B8008991DA /* JournlerCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		724597CD101114CA008991DA /* JournlerEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 724597CB101114CA008991DA /* JournlerEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		724597CE101114CA008991DA /* JournlerEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 724597CC101114CA008991DA /* JournlerEntry.m */; };
+		724597D1101114D9008991DA /* JournlerResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 724597CF101114D9008991DA /* JournlerResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		724597D2101114D9008991DA /* JournlerResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 724597D0101114D9008991DA /* JournlerResource.m */; };
+		724597D5101114ED008991DA /* JournlerCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 724597D3101114ED008991DA /* JournlerCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		724597D6101114ED008991DA /* JournlerCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 724597D4101114ED008991DA /* JournlerCondition.m */; };
+		724597D9101114FC008991DA /* BlogPref.h in Headers */ = {isa = PBXBuildFile; fileRef = 724597D7101114FC008991DA /* BlogPref.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		724597DA101114FC008991DA /* BlogPref.m in Sources */ = {isa = PBXBuildFile; fileRef = 724597D8101114FC008991DA /* BlogPref.m */; };
+		724597DD1011150E008991DA /* JournlerSearchManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 724597DB1011150E008991DA /* JournlerSearchManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		724597DE1011150E008991DA /* JournlerSearchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 724597DC1011150E008991DA /* JournlerSearchManager.m */; };
+		724597E11011151A008991DA /* JournlerIndexServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 724597DF1011151A008991DA /* JournlerIndexServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		724597E21011151A008991DA /* JournlerIndexServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 724597E01011151A008991DA /* JournlerIndexServer.m */; };
+		724597E510111527008991DA /* IndexNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 724597E310111527008991DA /* IndexNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		724597E610111527008991DA /* IndexNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 724597E410111527008991DA /* IndexNode.m */; };
+		724597EF1011168D008991DA /* JournlerFileWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 724597ED1011168D008991DA /* JournlerFileWatcher.m */; };
+		724597F01011168D008991DA /* JournlerFileWatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 724597EE1011168D008991DA /* JournlerFileWatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		724597F310111698008991DA /* JournlerFNSubscribeFileWatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 724597F110111698008991DA /* JournlerFNSubscribeFileWatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		724597F410111698008991DA /* JournlerFNSubscribeFileWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 724597F210111698008991DA /* JournlerFNSubscribeFileWatcher.m */; };
+		724597F7101116A6008991DA /* JournlerKQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 724597F5101116A6008991DA /* JournlerKQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		724597F8101116A6008991DA /* JournlerKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 724597F6101116A6008991DA /* JournlerKQueue.m */; };
+		724597FB101116B2008991DA /* JournlerMainThreadProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 724597F9101116B2008991DA /* JournlerMainThreadProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		724597FC101116B2008991DA /* JournlerMainThreadProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 724597FA101116B2008991DA /* JournlerMainThreadProxy.m */; };
+		72459800101116C7008991DA /* NSArray_JournlerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 724597FE101116C7008991DA /* NSArray_JournlerAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72459801101116C7008991DA /* NSArray_JournlerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 724597FF101116C7008991DA /* NSArray_JournlerAdditions.m */; };
+		72459804101116D5008991DA /* NSAttributedString+JournlerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 72459802101116D5008991DA /* NSAttributedString+JournlerAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72459805101116D5008991DA /* NSAttributedString+JournlerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 72459803101116D5008991DA /* NSAttributedString+JournlerAdditions.m */; };
+		72459808101116E1008991DA /* NSURL+JournlerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 72459806101116E1008991DA /* NSURL+JournlerAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72459809101116E1008991DA /* NSURL+JournlerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 72459807101116E1008991DA /* NSURL+JournlerAdditions.m */; };
+		7245980C101116EF008991DA /* NSString+JournlerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7245980A101116EF008991DA /* NSString+JournlerAdditions.m */; };
+		7245980D101116EF008991DA /* NSString+JournlerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7245980B101116EF008991DA /* NSString+JournlerAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7245981010111725008991DA /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7245980F10111725008991DA /* libcrypto.dylib */; };
+		724599C010111740008991DA /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724599BC10111740008991DA /* AddressBook.framework */; };
+		724599C110111740008991DA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724599BD10111740008991DA /* Security.framework */; };
+		724599C210111740008991DA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724599BE10111740008991DA /* WebKit.framework */; };
+		724599C310111740008991DA /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724599BF10111740008991DA /* Carbon.framework */; };
+		724599E910112823008991DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 724599E810112823008991DA /* main.m */; };
+		724599EB10112852008991DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		724599EE1011285F008991DA /* SproutedInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7245972410111457008991DA /* SproutedInterface.framework */; };
+		724599EF1011285F008991DA /* SproutedUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7245972510111457008991DA /* SproutedUtilities.framework */; };
+		724599F010112863008991DA /* SproutedInterface.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 7245972410111457008991DA /* SproutedInterface.framework */; };
+		724599F110112863008991DA /* SproutedUtilities.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 7245972510111457008991DA /* SproutedUtilities.framework */; };
+		724599F210112867008991DA /* JournlerCore.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* JournlerCore.framework */; };
+		724599FA101128B2008991DA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 724599F9101128B2008991DA /* MainMenu.xib */; };
+		72459AD310112926008991DA /* DemonstrationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72459AD210112926008991DA /* DemonstrationController.m */; };
+		72E87063101E465000AB2A8A /* JournlerCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* JournlerCore.framework */; };
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		724599F410112877008991DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = JournlerCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		724599F8101128AA008991DA /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				724599F010112863008991DA /* SproutedInterface.framework in Copy Frameworks */,
+				724599F110112863008991DA /* SproutedUtilities.framework in Copy Frameworks */,
+				724599F210112867008991DA /* JournlerCore.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* JournlerCore_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournlerCore_Prefix.pch; sourceTree = "<group>"; };
+		7245970A101113C3008991DA /* JournlerSingletons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournlerSingletons.h; sourceTree = "<group>"; };
+		7245970B101113C3008991DA /* JournlerCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournlerCore.h; sourceTree = "<group>"; };
+		7245970C101113C3008991DA /* Definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Definitions.h; sourceTree = "<group>"; };
+		7245971F10111443008991DA /* JournlerJournal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournlerJournal.h; sourceTree = "<group>"; };
+		7245972010111443008991DA /* JournlerJournal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournlerJournal.m; sourceTree = "<group>"; };
+		7245972410111457008991DA /* SproutedInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SproutedInterface.framework; sourceTree = "<group>"; };
+		7245972510111457008991DA /* SproutedUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SproutedUtilities.framework; sourceTree = "<group>"; };
+		724597B91011149E008991DA /* JournlerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournlerObject.m; sourceTree = "<group>"; };
+		724597BA1011149E008991DA /* JournlerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournlerObject.h; sourceTree = "<group>"; };
+		724597BD101114B8008991DA /* JournlerCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournlerCollection.m; sourceTree = "<group>"; };
+		724597BE101114B8008991DA /* JournlerCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournlerCollection.h; sourceTree = "<group>"; };
+		724597CB101114CA008991DA /* JournlerEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournlerEntry.h; sourceTree = "<group>"; };
+		724597CC101114CA008991DA /* JournlerEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournlerEntry.m; sourceTree = "<group>"; };
+		724597CF101114D9008991DA /* JournlerResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournlerResource.h; sourceTree = "<group>"; };
+		724597D0101114D9008991DA /* JournlerResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournlerResource.m; sourceTree = "<group>"; };
+		724597D3101114ED008991DA /* JournlerCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournlerCondition.h; sourceTree = "<group>"; };
+		724597D4101114ED008991DA /* JournlerCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournlerCondition.m; sourceTree = "<group>"; };
+		724597D7101114FC008991DA /* BlogPref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogPref.h; sourceTree = "<group>"; };
+		724597D8101114FC008991DA /* BlogPref.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogPref.m; sourceTree = "<group>"; };
+		724597DB1011150E008991DA /* JournlerSearchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournlerSearchManager.h; sourceTree = "<group>"; };
+		724597DC1011150E008991DA /* JournlerSearchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournlerSearchManager.m; sourceTree = "<group>"; };
+		724597DF1011151A008991DA /* JournlerIndexServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournlerIndexServer.h; sourceTree = "<group>"; };
+		724597E01011151A008991DA /* JournlerIndexServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournlerIndexServer.m; sourceTree = "<group>"; };
+		724597E310111527008991DA /* IndexNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexNode.h; sourceTree = "<group>"; };
+		724597E410111527008991DA /* IndexNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexNode.m; sourceTree = "<group>"; };
+		724597ED1011168D008991DA /* JournlerFileWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournlerFileWatcher.m; sourceTree = "<group>"; };
+		724597EE1011168D008991DA /* JournlerFileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournlerFileWatcher.h; sourceTree = "<group>"; };
+		724597F110111698008991DA /* JournlerFNSubscribeFileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournlerFNSubscribeFileWatcher.h; sourceTree = "<group>"; };
+		724597F210111698008991DA /* JournlerFNSubscribeFileWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournlerFNSubscribeFileWatcher.m; sourceTree = "<group>"; };
+		724597F5101116A6008991DA /* JournlerKQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournlerKQueue.h; sourceTree = "<group>"; };
+		724597F6101116A6008991DA /* JournlerKQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournlerKQueue.m; sourceTree = "<group>"; };
+		724597F9101116B2008991DA /* JournlerMainThreadProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournlerMainThreadProxy.h; sourceTree = "<group>"; };
+		724597FA101116B2008991DA /* JournlerMainThreadProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournlerMainThreadProxy.m; sourceTree = "<group>"; };
+		724597FE101116C7008991DA /* NSArray_JournlerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArray_JournlerAdditions.h; sourceTree = "<group>"; };
+		724597FF101116C7008991DA /* NSArray_JournlerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArray_JournlerAdditions.m; sourceTree = "<group>"; };
+		72459802101116D5008991DA /* NSAttributedString+JournlerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+JournlerAdditions.h"; sourceTree = "<group>"; };
+		72459803101116D5008991DA /* NSAttributedString+JournlerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+JournlerAdditions.m"; sourceTree = "<group>"; };
+		72459806101116E1008991DA /* NSURL+JournlerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+JournlerAdditions.h"; sourceTree = "<group>"; };
+		72459807101116E1008991DA /* NSURL+JournlerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+JournlerAdditions.m"; sourceTree = "<group>"; };
+		7245980A101116EF008991DA /* NSString+JournlerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JournlerAdditions.m"; sourceTree = "<group>"; };
+		7245980B101116EF008991DA /* NSString+JournlerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JournlerAdditions.h"; sourceTree = "<group>"; };
+		7245980F10111725008991DA /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = /usr/lib/libcrypto.dylib; sourceTree = "<absolute>"; };
+		724599BC10111740008991DA /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = /System/Library/Frameworks/AddressBook.framework; sourceTree = "<absolute>"; };
+		724599BD10111740008991DA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		724599BE10111740008991DA /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		724599BF10111740008991DA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		724599D01011269C008991DA /* JournlerCore Demonstration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JournlerCore Demonstration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		724599D61011269D008991DA /* JournlerCore Demonstration-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JournlerCore Demonstration-Info.plist"; sourceTree = "<group>"; };
+		724599E810112823008991DA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		724599F9101128B2008991DA /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		72459AD110112926008991DA /* DemonstrationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemonstrationController.h; sourceTree = "<group>"; };
+		72459AD210112926008991DA /* DemonstrationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemonstrationController.m; sourceTree = "<group>"; };
+		72459AD610112971008991DA /* ReadMe.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* JournlerCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JournlerCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		724599CE1011269C008991DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72E87063101E465000AB2A8A /* JournlerCore.framework in Frameworks */,
+				724599EE1011285F008991DA /* SproutedInterface.framework in Frameworks */,
+				724599EF1011285F008991DA /* SproutedUtilities.framework in Frameworks */,
+				724599EB10112852008991DA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+				7245972610111457008991DA /* SproutedInterface.framework in Frameworks */,
+				7245972710111457008991DA /* SproutedUtilities.framework in Frameworks */,
+				7245981010111725008991DA /* libcrypto.dylib in Frameworks */,
+				724599C010111740008991DA /* AddressBook.framework in Frameworks */,
+				724599C110111740008991DA /* Security.framework in Frameworks */,
+				724599C210111740008991DA /* WebKit.framework in Frameworks */,
+				724599C310111740008991DA /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* JournlerCore.framework */,
+				724599D01011269C008991DA /* JournlerCore Demonstration.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* JournlerCore */ = {
+			isa = PBXGroup;
+			children = (
+				72459AD610112971008991DA /* ReadMe.rtf */,
+				724599E7101127FB008991DA /* Demonstration */,
+				08FB77AEFE84172EC02AAC07 /* JournlerCore Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = JournlerCore;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				7245980F10111725008991DA /* libcrypto.dylib */,
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+				724599D61011269D008991DA /* JournlerCore Demonstration-Info.plist */,
+				724599F9101128B2008991DA /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* JournlerCore Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7245970B101113C3008991DA /* JournlerCore.h */,
+				7245970C101113C3008991DA /* Definitions.h */,
+				7245970A101113C3008991DA /* JournlerSingletons.h */,
+				72459711101113F7008991DA /* Model */,
+				7245971210111409008991DA /* Searching & Lexicon */,
+				7245971310111411008991DA /* Core Utilities */,
+			);
+			name = "JournlerCore Classes";
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				724599BC10111740008991DA /* AddressBook.framework */,
+				724599BD10111740008991DA /* Security.framework */,
+				724599BE10111740008991DA /* WebKit.framework */,
+				724599BF10111740008991DA /* Carbon.framework */,
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+				7245972410111457008991DA /* SproutedInterface.framework */,
+				7245972510111457008991DA /* SproutedUtilities.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* JournlerCore_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		72459711101113F7008991DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7245971F10111443008991DA /* JournlerJournal.h */,
+				7245972010111443008991DA /* JournlerJournal.m */,
+				724597BA1011149E008991DA /* JournlerObject.h */,
+				724597B91011149E008991DA /* JournlerObject.m */,
+				724597BE101114B8008991DA /* JournlerCollection.h */,
+				724597BD101114B8008991DA /* JournlerCollection.m */,
+				724597CB101114CA008991DA /* JournlerEntry.h */,
+				724597CC101114CA008991DA /* JournlerEntry.m */,
+				724597CF101114D9008991DA /* JournlerResource.h */,
+				724597D0101114D9008991DA /* JournlerResource.m */,
+				724597D3101114ED008991DA /* JournlerCondition.h */,
+				724597D4101114ED008991DA /* JournlerCondition.m */,
+				724597D7101114FC008991DA /* BlogPref.h */,
+				724597D8101114FC008991DA /* BlogPref.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7245971210111409008991DA /* Searching & Lexicon */ = {
+			isa = PBXGroup;
+			children = (
+				724597DB1011150E008991DA /* JournlerSearchManager.h */,
+				724597DC1011150E008991DA /* JournlerSearchManager.m */,
+				724597DF1011151A008991DA /* JournlerIndexServer.h */,
+				724597E01011151A008991DA /* JournlerIndexServer.m */,
+				724597E310111527008991DA /* IndexNode.h */,
+				724597E410111527008991DA /* IndexNode.m */,
+			);
+			name = "Searching & Lexicon";
+			sourceTree = "<group>";
+		};
+		7245971310111411008991DA /* Core Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7245971410111420008991DA /* Journler UKQueue */,
+				7245971510111428008991DA /* Categories */,
+			);
+			name = "Core Utilities";
+			sourceTree = "<group>";
+		};
+		7245971410111420008991DA /* Journler UKQueue */ = {
+			isa = PBXGroup;
+			children = (
+				724597ED1011168D008991DA /* JournlerFileWatcher.m */,
+				724597EE1011168D008991DA /* JournlerFileWatcher.h */,
+				724597F110111698008991DA /* JournlerFNSubscribeFileWatcher.h */,
+				724597F210111698008991DA /* JournlerFNSubscribeFileWatcher.m */,
+				724597F5101116A6008991DA /* JournlerKQueue.h */,
+				724597F6101116A6008991DA /* JournlerKQueue.m */,
+				724597F9101116B2008991DA /* JournlerMainThreadProxy.h */,
+				724597FA101116B2008991DA /* JournlerMainThreadProxy.m */,
+			);
+			name = "Journler UKQueue";
+			sourceTree = "<group>";
+		};
+		7245971510111428008991DA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				724597FE101116C7008991DA /* NSArray_JournlerAdditions.h */,
+				724597FF101116C7008991DA /* NSArray_JournlerAdditions.m */,
+				72459802101116D5008991DA /* NSAttributedString+JournlerAdditions.h */,
+				72459803101116D5008991DA /* NSAttributedString+JournlerAdditions.m */,
+				72459806101116E1008991DA /* NSURL+JournlerAdditions.h */,
+				72459807101116E1008991DA /* NSURL+JournlerAdditions.m */,
+				7245980B101116EF008991DA /* NSString+JournlerAdditions.h */,
+				7245980A101116EF008991DA /* NSString+JournlerAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		724599E7101127FB008991DA /* Demonstration */ = {
+			isa = PBXGroup;
+			children = (
+				724599E810112823008991DA /* main.m */,
+				72459AD110112926008991DA /* DemonstrationController.h */,
+				72459AD210112926008991DA /* DemonstrationController.m */,
+			);
+			name = Demonstration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7245970D101113C3008991DA /* JournlerSingletons.h in Headers */,
+				7245970E101113C3008991DA /* JournlerCore.h in Headers */,
+				7245970F101113C3008991DA /* Definitions.h in Headers */,
+				7245972110111443008991DA /* JournlerJournal.h in Headers */,
+				724597BC1011149E008991DA /* JournlerObject.h in Headers */,
+				724597C0101114B8008991DA /* JournlerCollection.h in Headers */,
+				724597CD101114CA008991DA /* JournlerEntry.h in Headers */,
+				724597D1101114D9008991DA /* JournlerResource.h in Headers */,
+				724597D5101114ED008991DA /* JournlerCondition.h in Headers */,
+				724597D9101114FC008991DA /* BlogPref.h in Headers */,
+				724597DD1011150E008991DA /* JournlerSearchManager.h in Headers */,
+				724597E11011151A008991DA /* JournlerIndexServer.h in Headers */,
+				724597E510111527008991DA /* IndexNode.h in Headers */,
+				724597F01011168D008991DA /* JournlerFileWatcher.h in Headers */,
+				724597F310111698008991DA /* JournlerFNSubscribeFileWatcher.h in Headers */,
+				724597F7101116A6008991DA /* JournlerKQueue.h in Headers */,
+				724597FB101116B2008991DA /* JournlerMainThreadProxy.h in Headers */,
+				72459800101116C7008991DA /* NSArray_JournlerAdditions.h in Headers */,
+				72459804101116D5008991DA /* NSAttributedString+JournlerAdditions.h in Headers */,
+				72459808101116E1008991DA /* NSURL+JournlerAdditions.h in Headers */,
+				7245980D101116EF008991DA /* NSString+JournlerAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		724599CF1011269C008991DA /* JournlerCore Demonstration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 724599D91011269E008991DA /* Build configuration list for PBXNativeTarget "JournlerCore Demonstration" */;
+			buildPhases = (
+				724599CC1011269C008991DA /* Resources */,
+				724599CD1011269C008991DA /* Sources */,
+				724599CE1011269C008991DA /* Frameworks */,
+				724599F8101128AA008991DA /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				724599F510112877008991DA /* PBXTargetDependency */,
+			);
+			name = "JournlerCore Demonstration";
+			productName = "JournlerCore Demonstration";
+			productReference = 724599D01011269C008991DA /* JournlerCore Demonstration.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8DC2EF4F0486A6940098B216 /* JournlerCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "JournlerCore" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JournlerCore;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = JournlerCore;
+			productReference = 8DC2EF5B0486A6940098B216 /* JournlerCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "JournlerCore" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* JournlerCore */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* JournlerCore */,
+				724599CF1011269C008991DA /* JournlerCore Demonstration */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		724599CC1011269C008991DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				724599FA101128B2008991DA /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		724599CD1011269C008991DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				724599E910112823008991DA /* main.m in Sources */,
+				72459AD310112926008991DA /* DemonstrationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7245972210111443008991DA /* JournlerJournal.m in Sources */,
+				724597BB1011149E008991DA /* JournlerObject.m in Sources */,
+				724597BF101114B8008991DA /* JournlerCollection.m in Sources */,
+				724597CE101114CA008991DA /* JournlerEntry.m in Sources */,
+				724597D2101114D9008991DA /* JournlerResource.m in Sources */,
+				724597D6101114ED008991DA /* JournlerCondition.m in Sources */,
+				724597DA101114FC008991DA /* BlogPref.m in Sources */,
+				724597DE1011150E008991DA /* JournlerSearchManager.m in Sources */,
+				724597E21011151A008991DA /* JournlerIndexServer.m in Sources */,
+				724597E610111527008991DA /* IndexNode.m in Sources */,
+				724597EF1011168D008991DA /* JournlerFileWatcher.m in Sources */,
+				724597F410111698008991DA /* JournlerFNSubscribeFileWatcher.m in Sources */,
+				724597F8101116A6008991DA /* JournlerKQueue.m in Sources */,
+				724597FC101116B2008991DA /* JournlerMainThreadProxy.m in Sources */,
+				72459801101116C7008991DA /* NSArray_JournlerAdditions.m in Sources */,
+				72459805101116D5008991DA /* NSAttributedString+JournlerAdditions.m in Sources */,
+				72459809101116E1008991DA /* NSURL+JournlerAdditions.m in Sources */,
+				7245980C101116EF008991DA /* NSString+JournlerAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		724599F510112877008991DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* JournlerCore */;
+			targetProxy = 724599F410112877008991DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = JournlerCore_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = JournlerCore;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = JournlerCore_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = JournlerCore;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+		724599D71011269D008991DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "JournlerCore Demonstration-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "JournlerCore Demonstration";
+			};
+			name = Debug;
+		};
+		724599D81011269D008991DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "JournlerCore Demonstration-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "JournlerCore Demonstration";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "JournlerCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "JournlerCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		724599D91011269E008991DA /* Build configuration list for PBXNativeTarget "JournlerCore Demonstration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				724599D71011269D008991DA /* Debug */,
+				724599D81011269D008991DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

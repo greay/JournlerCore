@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'JournlerCore' target in the 'JournlerCore' project.
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
