@@ -104,8 +104,8 @@
 		7245970C101113C3008991DA /* Definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Definitions.h; sourceTree = "<group>"; };
 		7245971F10111443008991DA /* JournlerJournal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournlerJournal.h; sourceTree = "<group>"; };
 		7245972010111443008991DA /* JournlerJournal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournlerJournal.m; sourceTree = "<group>"; };
-		7245972410111457008991DA /* SproutedInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SproutedInterface.framework; sourceTree = "<group>"; };
-		7245972510111457008991DA /* SproutedUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SproutedUtilities.framework; sourceTree = "<group>"; };
+		7245972410111457008991DA /* SproutedInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SproutedInterface.framework; path = Frameworks/SproutedInterface.framework; sourceTree = "<group>"; };
+		7245972510111457008991DA /* SproutedUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SproutedUtilities.framework; path = Frameworks/SproutedUtilities.framework; sourceTree = "<group>"; };
 		724597B91011149E008991DA /* JournlerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournlerObject.m; sourceTree = "<group>"; };
 		724597BA1011149E008991DA /* JournlerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournlerObject.h; sourceTree = "<group>"; };
 		724597BD101114B8008991DA /* JournlerCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournlerCollection.m; sourceTree = "<group>"; };
@@ -242,6 +242,7 @@
 				7245971310111411008991DA /* Core Utilities */,
 			);
 			name = "JournlerCore Classes";
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
@@ -578,6 +579,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "$(SOURCE_ROOT)/Frameworks";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -592,6 +594,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "$(SOURCE_ROOT)/Frameworks";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
