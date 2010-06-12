@@ -19,23 +19,18 @@
 - (id)initWithWindow:(NSWindow *)window
 {
 	self = [super initWithWindow:window];
-	// if ([NSBundle loadNibNamed:@"Entry" owner:self]) {
-	// 	NSLog(@"successfully loaded Entry nib.");
-	// } else {
-	// 	NSLog(@"failed to load Entry nib.");
-	// }
 	return self;
 }
 
 #pragma mark -
 
 - (void)dealloc {
-	[textView release];
 	[libraryController release];
 	[library release];
 	[entriesController release];
 	[entries release];
-
+	[entryViewController release];
+	
 	[super dealloc];
 }
 
@@ -61,24 +56,37 @@
 	entries.dataSource = entriesController;
 	
 	[self loadJournal];
-	
-	if ([NSBundle loadNibNamed:@"Entry" owner:self]) {
-		NSLog(@"successfully loaded Entry nib.");
-	} else {
-		NSLog(@"failed to load Entry nib.");
-	}
-	
 }
 
 - (void)awakeFromNib {	
 	[calendar setDateValue:[NSDate date]];
 	[calendar setDelegate:self];
+
+	[super awakeFromNib];
+
+	NSLog(@"awakeFromNib...");
+	
+	entryViewController = [[EntryViewController alloc] initWithNibName:@"Entry" bundle:nil];
+
+	[[entryViewController view] setFrame:[entryView frame]];
+	[[entryView superview] replaceSubview:entryView with:[entryViewController view]];
+
+}
+
+- (void)loadWindow {
+	// [super loadWindow];
+	// NSLog(@"loadWindow...");
+	// 
+	// entryViewController = [[EntryViewController alloc] initWithNibName:@"Entry" bundle:nil];
+	// 
+	// [[entryViewController view] setFrame:[entryView frame]];
+	// [[entryView superview] replaceSubview:entryView with:[entryViewController view]];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification
 {
 	NSLog(@"saving");
-	[self updateEntry:self.currentEntry text:[textView textStorage]];
+	[self updateEntry:self.currentEntry text:[entryViewController.textView textStorage]];
 	[[JournlerJournal sharedJournal] saveCollections:YES];
 }
 
@@ -134,11 +142,11 @@
 
 - (void)updateTextView:(NSString*)text
 {
-	[[textView textStorage] beginEditing];
-	[[textView textStorage] appendAttributedString:
-			[[[NSAttributedString alloc] initWithString:
-			[NSString stringWithFormat:@"\n%@\n",text]] autorelease]];
-	[[textView textStorage] endEditing]; 
+	[[entryViewController.textView textStorage] beginEditing];
+	[[entryViewController.textView textStorage] appendAttributedString:
+ 			[[[NSAttributedString alloc] initWithString:
+ 			[NSString stringWithFormat:@"\n%@\n",text]] autorelease]];
+	[[entryViewController.textView textStorage] endEditing]; 
 }
 
 - (void)updateEntry:(JournlerEntry *)entry text:(NSAttributedString *)text {
@@ -156,7 +164,7 @@
 		str = [[[NSAttributedString alloc] initWithString:@""] autorelease];
 	}
 
-	[[textView textStorage] setAttributedString:str];
+	[[entryViewController.textView textStorage] setAttributedString:str];
 }
 
 #pragma mark -
@@ -192,7 +200,7 @@
 		} else {
 			entry = nil;
 		}
-		[self updateEntry:self.currentEntry text:[textView textStorage]];
+		[self updateEntry:self.currentEntry text:[entryViewController.textView textStorage]];
 		[self beginEditingEntry:entry];
 	} else {
 		NSLog(@"wtf");

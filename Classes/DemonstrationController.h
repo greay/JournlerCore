@@ -11,6 +11,7 @@
 
 #import "LibraryController.h";
 #import "EntriesController.h"
+#import "EntryViewController.h"
 
 @interface DemonstrationController : NSWindowController <NSTableViewDelegate, NSDatePickerCellDelegate> {
 	
@@ -23,8 +24,8 @@
 	IBOutlet NSTableView *entries;
 
 	JournlerEntry *currentEntry;
+	EntryViewController *entryViewController;
 	IBOutlet NSView *entryView;
-	IBOutlet NSTextView *textView;
 }
 
 @property (nonatomic, retain) JournlerEntry *currentEntry;
