@@ -240,7 +240,7 @@
 {
 	if ( anObject == nil || aKey == nil ) 
 	{
-		[NSException raise:NSInvalidArgumentException format:nil];
+		[NSException raise:NSInvalidArgumentException format:@"exception in BlogPref setObject:forKey:"];
 		return;
 	}
 	

@@ -1246,7 +1246,7 @@ bail:
 		NSArray *journlerObjects = [self journlerObjectsForTerm:aTerm options:options];
 		
 		if ( [journlerObjects count] == 0 )
-			NSLog(theTerm);
+			NSLog(@"term:%@", theTerm);
 		else
 		{
 			// once done, prepare the dictionary
