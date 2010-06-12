@@ -11,7 +11,35 @@
 
 @implementation EntryViewController
 
+
+#pragma mark -
+
 @synthesize titleCell, dateCell, categoryCell, tagsCell, textView;
+
+- (void)setEntry:(JournlerEntry *)anEntry {
+	[entry release];
+	entry = [anEntry retain];
+	
+	NSAttributedString *str = nil;
+	if (entry && [entry contents]) {
+		str = [entry contents];
+	} else {
+		str = [[[NSAttributedString alloc] initWithString:@""] autorelease];
+	}
+	
+	[self.titleCell setObjectValue:[entry title]];
+	[self.dateCell setObjectValue:[entry calDate]];
+	[self.categoryCell setObjectValue:[entry category]];
+	[self.tagsCell setObjectValue:[[entry tags] componentsJoinedByString:@","]];
+	
+	[[self.textView textStorage] setAttributedString:str];
+}
+
+- (JournlerEntry *)entry {
+	return entry;
+}
+
+#pragma mark -
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

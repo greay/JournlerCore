@@ -156,20 +156,7 @@
 
 - (void)beginEditingEntry:(JournlerEntry *)entry {
 	self.currentEntry = entry;
-
-	NSAttributedString *str = nil;
-	if (entry && [entry contents]) {
-		str = [entry contents];
-	} else {
-		str = [[[NSAttributedString alloc] initWithString:@""] autorelease];
-	}
-	
-    [entryViewController.titleCell setObjectValue:[entry title]];
-    [entryViewController.dateCell setObjectValue:[entry calDate]];
-    [entryViewController.categoryCell setObjectValue:[entry category]];
-    [entryViewController.tagsCell setObjectValue:[[entry tags] componentsJoinedByString:@","]];
-	
-	[[entryViewController.textView textStorage] setAttributedString:str];
+	entryViewController.entry = entry;
 }
 
 #pragma mark -
