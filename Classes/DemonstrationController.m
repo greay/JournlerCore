@@ -163,7 +163,12 @@
 	} else {
 		str = [[[NSAttributedString alloc] initWithString:@""] autorelease];
 	}
-
+	
+    [entryViewController.titleCell setObjectValue:[entry title]];
+    [entryViewController.dateCell setObjectValue:[entry calDate]];
+    [entryViewController.categoryCell setObjectValue:[entry category]];
+    [entryViewController.tagsCell setObjectValue:[[entry tags] componentsJoinedByString:@","]];
+	
 	[[entryViewController.textView textStorage] setAttributedString:str];
 }
 

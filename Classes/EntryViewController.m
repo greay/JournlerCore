@@ -11,7 +11,7 @@
 
 @implementation EntryViewController
 
-@synthesize textView;
+@synthesize titleCell, dateCell, categoryCell, tagsCell, textView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
