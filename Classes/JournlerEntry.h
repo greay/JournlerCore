@@ -95,7 +95,7 @@ enum {
 @class JournlerJournal;
 @class JournlerResource;
 
-@interface JournlerEntry : JournlerObject <NSCopying, NSCoding>
+@interface JournlerEntry : JournlerObject <NSCopying, NSCoding, NSTextStorageDelegate>
 {
 	
 	//

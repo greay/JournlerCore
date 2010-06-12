@@ -137,7 +137,7 @@ typedef enum {
 @class JournlerIndexServer;
 @class JournlerSearchManager;
 
-@interface JournlerJournal : NSObject
+@interface JournlerJournal : NSObject <NSMenuDelegate>
 {
 	NSMutableDictionary	*_properties;
 	NSString *_password;

@@ -86,7 +86,7 @@ typedef enum {
 	kJournlerFolderMenuUseLargeImages = 1 << 2
 } JournlerFolderMenuRepresentationOptions;
 
-@interface JournlerCollection : JournlerObject <NSCopying, NSCoding>
+@interface JournlerCollection : JournlerObject <NSCopying, NSCoding, NSMenuDelegate>
 {
 	NSMutableArray *entries;
 	NSMutableArray *children;
